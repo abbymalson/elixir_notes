@@ -1,0 +1,15 @@
+* Complete Elixir and Phoenix Bootcamp
+** An Elixir Warmup
+
+** Elixir's Amazing Pattern Matching
+** Testing and Documentation
+** A few Side Topics
+** Image Manipulation with Elixir
+** On to Phoenix
+** MVC in Phoenix
+** Models in Phoenix
+** Working with Postgres
+** Handling Authentication with OAuth
+** Transforming Requests with Plugs
+** Websockets in Phoenix
+** Phoenix 1.3 Update

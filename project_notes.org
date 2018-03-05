@@ -1,0 +1,132 @@
+* Complete Elixir and Phoenix Bootcamp
+** An Elixir Warmup
+*** Installing Elixir
+*** Project Outline
+**** deck of cards
+     and can do a specific set of operations
+     but we want to get basic footing first
+     create_deck
+     shuffle
+     deal
+     contains?
+     save
+     load
+**** let's get started
+***** Command Line - Creating Project with Mix
+      task number 1 - generate elixir with 'mix'
+      #+name: command line
+      #+begin_src sh
+      mix new cards
+      #+end_src
+      overview
+       - mix - intergral peice
+         can generate projects
+         compile projects
+         run tasks - generating documentation, running tests
+         manage dependencies
+**** Elixir modules and methods
+***** Interactive elixir shell
+      #+name: command line
+      #+begin_src sh
+      iex -S mix
+      #+end_src
+      so because we passed the -S it compiled the project and put it into
+      our shell
+      #+name: 
+      #+begin_src sh
+      #+end_src
+      last line is returned as value
+**** Lists and Strings
+***** convention is to use double quotes
+***** [] allows you to create lists
+      ["Ace", "Two", "Three"]
+      iex(6)> recompile
+      to exit command shell use CTRL+C twice
+      Cards.create_deck
+**** Object Oriented versus Functional Programming
+     Design patterns in elixir, somewhat of a long section
+     last section we created a deck
+     array of strings, as opposed to creating an instance variable
+     like this.myDeck = ...
+     we instead just returned the value
+     first of many discussions, clear distinction between functional and 
+     object oriented
+     
+***** Object Oriented Method:
+     Deck class and a card class
+     in object oriented, for instance, shuffle, deal, etc. would execute
+     on it's instance of the object
+     so deck.shuffle will execute it on that deck
+
+***** Functional Method:
+     no such thing as this
+     no instance variables what so ever
+     create_deck returns list of strings
+     shuffle -> pass in array of string -> return shuffled array of strings
+    
+**** Method Arguments
+***** shuffle
+      shuffle(deck)
+      Cards.shuffle()
+      returns error because it's looking for shuffle/1 - its expecting arguments
+      Cards.shuffle([])
+      Cards.shuffle([],[]) returns an error because that's looking for shuffle/2
+**** Enum Module
+     lots in the standard library in elixir
+     standard docs - elixir documentation
+     elixir-lang.org/docs.html - we want the standard
+     scroll down to "Enum" - enumerate over enumerables
+     - lists of data
+
+     Enum.shuffle(deck)
+     deck = Cards.create_deck
+     deck
+     Cards.shuffle(deck)
+     Cards.shuffle(deck)
+     Cards.shuffle(deck)
+     Cards.shuffle(deck)
+**** Immutability in Elixir
+     elixir has a bunch of functionality built into it
+     suprising amount of complexity going on with elixir shuffle ...
+     immutability
+     'myDeck' = ["Ace", "Two", "Three"]
+     shuffle = copy list -> shuffle list -> return new list
+     we never modify an existing variable that is in place (returns new data structure)
+**** Searching a list
+
+     'contains?' returns true or false
+     ? are valid characters in function/method names in elixir
+     '?' tend to be for true/false modules for clarification
+     it does not impart any special functionality, it is just there
+     for additional clarification for developers
+
+
+* Elixir Bridge training
+http://elixirbridge.org/
+** Installing elixir
+should have installed asdf
+well I already have that installed
+
+i "2"
+iex(7)> i "2"                      
+Term                      
+  "2"                     
+Data type                 
+  BitString               
+Byte size                 
+  1                       
+Description               
+  This is a string: a UTF-8 encoded binary. It's printed surrounded by                                   
+  "double quotes" because all UTF-8 encoded codepoints in it are printable.                              
+Raw representation        
+  <<50>>                  
+Reference modules         
+  String, :binary         
+Implemented protocols     
+  IEx.Info, List.Chars, Collectable, String.Chars, Inspect                                               
+iex(8)>                   
+
+:observer.start
+
+
+
